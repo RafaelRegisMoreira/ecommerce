@@ -1,0 +1,112 @@
+<section>
+    <div class="header">
+        <div class="logo">
+
+        </div>
+        <div class="cep">
+            <div class="contDropDown">
+                <div class="dropdown">
+                    <div class="dropbtn">
+                        <span class="material-symbols-outlined">
+                            home_pin
+                        </span>
+                        <!-- <mat-icon aria-hidden="false" aria-label="Icone de deleção" fontIcon="home_pin"></mat-icon> -->
+                        <p>
+                            Informe seu CEP:
+                        </p>
+                    </div>
+                    <div class="dropdown-content">
+                        <p>
+                            A gente ajuda a encontrar o seu produto
+                            <br>
+                            <b>com menor frete e prazo de entrega.</b>
+                        </p>
+                        <div class="boxDropDown">
+                            <mat-form-field>
+                                <mat-label>Digite seu CEP:</mat-label>
+                                <input matInput #postalCode maxlength="8" placeholder="Ex. 94105-029">
+                                <mat-hint align="end">{{postalCode.value.length}} / 8</mat-hint>
+                            </mat-form-field>
+                            <button mat-button>
+                                Buscar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="boxInput">
+            <div class="input">
+
+                <input type="text" class="customInput" placeholder="Oque você esta procurando ?">
+                <!-- matInput [matAutocomplete]="auto" (keyup)="autocomplete()" -->
+                <!-- <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                        <mat-option *ngFor="let option of filteredOptions" [value]="option">
+                            {{ option.nome }}
+                        </mat-option>
+                    </mat-autocomplete> -->
+                <button>
+                    <mat-icon aria-hidden="false" aria-label="Icone de deleção" fontIcon="search"></mat-icon>
+                </button>
+            </div>
+        </div>
+        <div class="loginCadastro">
+            <div class="contDropDown">
+                <div class="dropdown">
+                    <h6 class="dropbtn">
+                        <span class="material-symbols-outlined">
+                            account_circle
+                        </span>
+                        <div>
+                            <b>Entre ou cadastre-se</b>
+                            <br>
+                            para ver seus pedidos
+                        </div>
+                    </h6>
+                    <div class="dropdown-content">
+
+                        <div class="boxDropDown">
+                            <p>
+                                Acesse sua conta
+                            </p>
+                            <hr>
+                            <p>
+                                Pedidos da Loja On-line
+                            </p>
+                            <hr>
+                            <p>
+                                Pedidos de Lojas Físicas
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="favoritos">
+                <span class="material-symbols-outlined">
+                    favorite
+                </span>
+            </div>
+
+            <div class="carrinho">
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="contCategorias">
+        <div class="dropDepartamentos">
+
+        </div>
+        <div class="categorias">
+
+        </div>
+    </div>
+    <div class="subCategorias">
+        <div class="carrosselSubCateg">
+
+        </div>
+    </div>
+</section>

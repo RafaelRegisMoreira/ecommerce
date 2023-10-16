@@ -1,0 +1,436 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome": "Produto 1",
+            "descricao": "Descrição do Produto 1",
+            "preco": 19.99,
+            "imagem": "url_imagem_produto_1.jpg",
+            "categoria": 1,
+            "idSubcategoria": 1,
+            "estoque": 100,
+            "fabricante": "Fabricante A",
+            "marca": "Marca A",
+            "dimensoes": [
+                {
+                    "cepOrigem": "",
+                    "cepDestino": "",
+                    "peso": "",
+                    "alturaCM": "",
+                    "larguraCM": "",
+                    "profundidadeCM": ""
+                }
+            ],
+            "avaliacoes": [
+                {
+                    "usuarioId": 1,
+                    "dataAvaliacao": "",
+                    "classificacao": 4.5,
+                    "comentario": "Ótimo produto!"
+                },
+                {
+                    "usuarioId": 2,
+                    "dataAvaliacao": "",
+                    "classificacao": 3.8,
+                    "comentario": "Bom, mas poderia ser melhor."
+                }
+            ]
+        }
+    ],
+    "categorias": [
+        {
+            "id": 1,
+            "nome": "Eletrônicos",
+            "descricao": "Eletrônicos em geral."
+        },
+        {
+            "id": 2,
+            "nome": "Moda",
+            "descricao": "Roupas, calçados, acessórios, etc."
+        },
+        {
+            "id": 3,
+            "nome": "Moveis",
+            "descricao": "Moveis de sala, cozinha, quarto e mobiliario em geral."
+        },
+        {
+            "id": 4,
+            "nome": "Esportes",
+            "descricao": "Artigos esportivos, roupas esportivas, equipamentos, etc."
+        },
+        {
+            "id": 5,
+            "nome": "Jogos e Brinquedos",
+            "descricao": "Jogos, brinquedos e produtos relacionados."
+        },
+        {
+            "id": 6,
+            "nome": "Beleza",
+            "descricao": "Produtos de beleza, maquiagem, cuidados com a pele, etc."
+        }
+    ],
+    "subcategorias": [
+        {
+            "id": 1,
+            "nome": "Smartphones",
+            "descricao": "Celulares inteligentes.",
+            "categoriaPai": 1
+        },
+        {
+            "id": 2,
+            "nome": "Tablets",
+            "descricao": "Tablets diversos.",
+            "categoriaPai": 1
+        },
+        {
+            "id": 3,
+            "nome": "Acessórios Eletrônicos",
+            "descricao": "Acessórios para eletrônicos.",
+            "categoriaPai": 1
+        },
+        {
+            "id": 4,
+            "nome": "Roupas Masculinas",
+            "descricao": "Roupas para homens.",
+            "categoriaPai": 2
+        },
+        {
+            "id": 5,
+            "nome": "Roupas Femininas",
+            "descricao": "Roupas para mulheres.",
+            "categoriaPai": 2
+        },
+        {
+            "id": 6,
+            "nome": "Calçados",
+            "descricao": "Calçados de diferentes estilos.",
+            "categoriaPai": 2
+        },
+        {
+            "id": 7,
+            "nome": "Sofás e Poltronas",
+            "descricao": "Móveis de sala de estar.",
+            "categoriaPai": 3
+        },
+        {
+            "id": 8,
+            "nome": "Mesas e Cadeiras",
+            "descricao": "Móveis de cozinha e sala de jantar.",
+            "categoriaPai": 3
+        },
+        {
+            "id": 9,
+            "nome": "Eletrodomésticos",
+            "descricao": "Eletrodomésticos para a casa.",
+            "categoriaPai": 3
+        },
+        {
+            "id": 10,
+            "nome": "Equipamentos Esportivos",
+            "descricao": "Equipamentos para esportes.",
+            "categoriaPai": 4
+        },
+        {
+            "id": 11,
+            "nome": "Roupas Esportivas",
+            "descricao": "Roupas para atividades esportivas.",
+            "categoriaPai": 4
+        },
+        {
+            "id": 12,
+            "nome": "Acessórios Esportivos",
+            "descricao": "Acessórios para esportes.",
+            "categoriaPai": 4
+        },
+        {
+            "id": 13,
+            "nome": "Jogos de Tabuleiro",
+            "descricao": "Jogos de tabuleiro e de estratégia.",
+            "categoriaPai": 5
+        },
+        {
+            "id": 14,
+            "nome": "Brinquedos Infantis",
+            "descricao": "Brinquedos para crianças.",
+            "categoriaPai": 5
+        },
+        {
+            "id": 15,
+            "nome": "Brinquedos para Animais de Estimação",
+            "descricao": "Brinquedos para animais de estimação.",
+            "categoriaPai": 5
+        },
+        {
+            "id": 16,
+            "nome": "Cuidados com a Pele",
+            "descricao": "Produtos para cuidados com a pele.",
+            "categoriaPai": 6
+        },
+        {
+            "id": 17,
+            "nome": "Maquiagem",
+            "descricao": "Produtos de maquiagem.",
+            "categoriaPai": 6
+        },
+        {
+            "id": 18,
+            "nome": "Perfumes",
+            "descricao": "Perfumes e fragrâncias.",
+            "categoriaPai": 6
+        }
+    ],
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "Usuário 1",
+            "email": "usuario1@email.com",
+            "senha": "senha_hashed",
+            "admin": false,
+            "enderecoEntrega": [
+                {
+                    "id": 1,
+                    "rua": "Rua Principal",
+                    "numero": "**USUARIO**",
+                    "complemento": "**USUARIO**",
+                    "bairro": "Centro",
+                    "cidade": "Cidade Exemplo",
+                    "estado": "Estado",
+                    "cep": "12345678",
+                    "pais": "País",
+                    "enderecoSelecionado": true
+                }
+            ],
+            "metodosPagamento": [
+                {
+                    "id": 1,
+                    "idTipo": 1,
+                    "info": {}
+                },
+                {
+                    "id": 2,
+                    "idTipo": 2,
+                    "info": {}
+                }
+            ],
+            "pedidos": [
+                {
+                    "id": 1,
+                    "data": "2023-10-05T10:30:00Z",
+                    "total": 49.98,
+                    "frete": [
+                        "trazer objto endereço selec, fazer calculo do frete e trazer aqui tbm ",
+                        {}
+                    ],
+                    "itens": [
+                        {
+                            "produtoId": 1,
+                            "quantidade": 2,
+                            "precoUnitario": 19.99
+                        },
+                        {
+                            "produtoId": 2,
+                            "quantidade": 1,
+                            "precoUnitario": 29.99
+                        }
+                    ]
+                }
+            ],
+            "carrinho": [
+                {
+                    "produtoId": 1,
+                    "quantidade": 2
+                },
+                {
+                    "produtoId": 2,
+                    "quantidade": 1
+                }
+            ],
+            "favoritos": [
+                {
+                    "produtoId": 3
+                },
+                {
+                    "produtoId": 4
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Usuário 2",
+            "email": "usuario2@email.com",
+            "senha": "senha_hashed",
+            "admin": false,
+            "enderecoEntrega": [
+                {
+                    "id": 1,
+                    "rua": "Avenida Secundária",
+                    "numero": "456",
+                    "complemento": "Casa",
+                    "bairro": "Bairro Exemplo",
+                    "cidade": "Outra Cidade",
+                    "estado": "Estado",
+                    "cep": "98765432",
+                    "pais": "País",
+                    "enderecoSelecionado": true
+                }
+            ],
+            "metodosPagamento": [
+                {
+                    "id": 1,
+                    "tipo": "Cartão de Crédito",
+                    "numero": "**** **** **** 5678",
+                    "nomeTitular": "Outro Titular",
+                    "validade": "06/24",
+                    "idEnderecoCobranca": 1
+                }
+            ],
+            "pedidos": [],
+            "carrinho": [],
+            "favoritos": []
+        },
+        {
+            "id": 3,
+            "nome": "Usuário 3",
+            "email": "usuario3@email.com",
+            "senha": "senha_hashed",
+            "admin": false,
+            "enderecoEntrega": [
+                {
+                    "id": 1,
+                    "rua": "Rua Terceira",
+                    "numero": "789",
+                    "complemento": "Apto 2A",
+                    "bairro": "Bairro Novo",
+                    "cidade": "Nova Cidade",
+                    "estado": "Estado",
+                    "cep": "54321678",
+                    "pais": "País",
+                    "enderecoSelecionado": true
+                }
+            ],
+            "metodosPagamento": [],
+            "pedidos": [],
+            "carrinho": [],
+            "favoritos": []
+        },
+        {
+            "id": 4,
+            "nome": "Usuário 4",
+            "email": "usuario4@email.com",
+            "senha": "senha_hashed",
+            "admin": false,
+            "enderecoEntrega": [
+                {
+                    "id": 1,
+                    "rua": "Avenida Principal",
+                    "numero": "567",
+                    "complemento": "",
+                    "bairro": "Centro",
+                    "cidade": "Cidade Nova",
+                    "estado": "Estado",
+                    "cep": "87654321",
+                    "pais": "País",
+                    "enderecoSelecionado": true
+                }
+            ],
+            "metodosPagamento": [
+                {
+                    "id": 1,
+                    "tipo": "Boleto Bancário",
+                    "numero": "1234567890",
+                    "nomeTitular": "Titular do Boleto",
+                    "validade": "",
+                    "idEnderecoCobranca": 4
+                }
+            ],
+            "pedidos": [],
+            "carrinho": [],
+            "favoritos": []
+        }
+    ],
+    "metodosPagamento": {
+        "cartaoCredito": {
+            "id": 1,
+            "tipo": "Cartão de Crédito",
+            "numero": "",
+            "chave": "",
+            "bandeiras": [
+                {
+                    "id": 1,
+                    "nome": "Visa",
+                    "img": ""
+                },
+                {
+                    "id": 2,
+                    "nome": "Master Card",
+                    "img": ""
+                },
+                {
+                    "id": 3,
+                    "nome": "American Express",
+                    "img": ""
+                },
+                {
+                    "id": 1,
+                    "nome": "Visa",
+                    "img": ""
+                }
+            ]
+        },
+        "pix": {
+            "id": 3,
+            "tipo": "Pix",
+            "chavePix": [
+                {
+                    "id": 1,
+                    "nome": "CPF",
+                    "icon": ""
+                },
+                {
+                    "id": 2,
+                    "nome": "Email",
+                    "icon": ""
+                },
+                {
+                    "id": 3,
+                    "nome": "Telefone",
+                    "icon": ""
+                }
+            ]
+        },
+        "payPal": {
+            "id": 2,
+            "tipo": "PayPal",
+            "conta": "email",
+            "icon": ""
+        }
+    },
+    "conteudoSite": {
+        "home": {
+            "texto": "",
+            "subTextos": "Categorias???",
+            "banner": [
+                {
+                    "id": 1,
+                    "img": "https://s.mlcdn.com.br/banner/campanhas/Desk_LargeDesk_1_Campanha_Todas_Todas_1-10-2023_grandesmarcas70off.png",
+                    "destaque": true
+                },
+                {
+                    "id": 2,
+                    "img": "https://s.mlcdn.com.br/banner/campanhas/Desk_LargeDesk_3_Campanha_Core_MO_9-10-2023_moveisate50off.png",
+                    "destaque": false
+                },
+                {
+                    "id": 3,
+                    "img": "https://s.mlcdn.com.br/banner/campanhas/Desk_LargeDesk_6_Campanha_Core_TE_10-10-2023_smartphone20off.png",
+                    "destaque": false
+                },
+                {
+                    "id": 4,
+                    "img": "https://s.mlcdn.com.br/banner/campanhas/Desk_LargeDesk_11_Campanha_Core_IN_9-10-2023_informaticaetablets.png",
+                    "destaque": false
+                }
+            ]
+        }
+    }
+}
